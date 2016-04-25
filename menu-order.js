@@ -1,5 +1,5 @@
 // quiz begins, no answers correct
-var correct = 0;
+
 var totalAsked = 0;
 
 // ask questions
@@ -7,13 +7,16 @@ function question(questionText) {
   var answerInput = prompt(questionText);
 
   var order = [
-    answerInput
   ];
+
+  while (i <= order.length){
+    order[i] = answerInput;
+  };
 
 
 
   }
-  console.log("total asked: " + totalAsked + " // correct: " + correct);
+  console.log("total asked: " + totalAsked );
 }
 
 
